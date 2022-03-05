@@ -1,0 +1,43 @@
+.Footer {
+  max-width: 100%;
+  height: 16.8rem;
+  background-color: #1e2833;
+  padding-left: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  #Logo {
+    width: 7.6rem;
+    position: relative;
+    top: 4rem;
+  }
+  .Footer,
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 66.75rem;
+    margin: 0px;
+    height: 50%;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 16.6rem;
+      gap: 2rem;
+    }
+
+    a {
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      //line-height: 20px;
+      //letter-spacing: 0.5px;
+    }
+  }
+}
