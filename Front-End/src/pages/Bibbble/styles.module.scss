@@ -1,5 +1,13 @@
-.Cards {
+#Cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 5.5rem 0rem 5.5rem 3rem;
+}
+
+#Footer {
+  position: relative;
+  top: 1rem;
+  right: 1rem;
 }
