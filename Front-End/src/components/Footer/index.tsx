@@ -12,15 +12,23 @@ function Footer() {
         />
         <section>
           <div>
-            <a href="https://fonts.google.com/specimen/DM+Sans?query=Dm+sans">
+            <a href="https://www.estantevirtual.com.br/termos-de-uso-comprador">
               Terms & Conditions
             </a>
-            <a>Privacy Policy</a>
+            <a href="https://www.estantevirtual.com.br/seguranca-e-privacidade">
+              Privacy Policy
+            </a>
           </div>
           <div>
-            <img src="/public/Facebook.svg" alt="Nosso Facebook" />
-            <img src="/public/Twitter.svg" alt="Nosso Twitter" />
-            <img src="/public/Instagram.svg" alt="Nosso Instagram" />
+            <a href="https://www.facebook.com/slideworks.cc/photos/a.1578796195717476/3080362742227473">
+              <img src="/public/Facebook.svg" alt="Nosso Facebook" />
+            </a>
+            <a href="https://twitter.com/">
+              <img src="/public/Twitter.svg" alt="Nosso Twitter" />
+            </a>
+            <a href="https://www.instagram.com/slideworks.cc/">
+              <img src="/public/Instagram.svg" alt="Nosso Instagram" />
+            </a>
           </div>
         </section>
       </footer>

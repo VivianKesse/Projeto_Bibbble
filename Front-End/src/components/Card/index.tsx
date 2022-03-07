@@ -1,24 +1,41 @@
+import moment from "moment";
 import React from "react";
-import { Data } from "../../interfaces/IBibbble";
 import styles from "./styles.module.scss";
-import axios from "axios";
 
 type BookProps = {
-  //  items: Data[];  id?: number | null | undefined;
-
   title?: string | null;
   author?: string | null;
   genre?: string | null;
   description?: string | null;
   isbn?: string | null;
   image?: string;
-  published?: string | null;
+  published?: string | number | null;
   publisher?: string | null;
 };
 
-// export const Card: React.FC<BookProps> ({items}) {
-// export const Card = ({ data }) => (
 function Card(BookProps: BookProps) {
+  // const date = new Intl
+  // .DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short' })
+  // .format(cr.toDate())
+  // const date = new Date(Date.UTC(2020, 11, 20, 3, 23, 16, 738));
+  // console.log(new Intl.DateTimeFormat("pt-BR").format(date));
+
+  // let formattedDate = moment({}).format("DD MMM. YY");
+
+  //   var objName = {
+
+  //     time: {BookProps,published},
+  //  }
+
+  //   let formattedTime = moment(objName.time).format("DD/MM/YYYY HH:mm");
+
+  // const date = new Date("2020-07-22T13:22:10.2566789+00:00");
+  // const formattedDate = date.toLocaleDateString("en-GB", {
+  //   day: "numeric",
+  //   month: "long",
+  //   year: "numeric",
+  // });
+
   return (
     <div className={styles.Card}>
       <div>
@@ -35,22 +52,14 @@ function Card(BookProps: BookProps) {
       <div id={styles.Flex}>
         <div id={styles.Genre}>{BookProps.genre}</div>
 
-        <div id={styles.Date}>{BookProps.published}</div>
+        <div id={styles.Date}>
+          {/* {formattedDate} */}
+          {/* ${date} */}
+          {BookProps.published}
+        </div>
       </div>
     </div>
   );
 }
 
-// function Card() {
-
 export default Card;
-
-// id,
-//   title,
-//   author,
-//   genre,
-//   description,
-//   isbn,
-//   image,
-//   published,
-//   publisher
